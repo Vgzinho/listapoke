@@ -1,0 +1,160 @@
+body {
+	font-family: "Poppins","sans-serif";
+	max-width: 1280px;
+	margin: 0 auto;
+	background-image: url('../imagens/697708.jpg');
+	background-size:cover;
+	background-repeat:repeat-x;
+}
+header .nome{
+	text-align: center;
+	color:orange;
+	background-color: #0a02f181;
+	border-radius: 50px;
+	font-weight: 900;
+	letter-spacing: 20px;
+}
+
+body.logo {
+ background-image: url('../imagens/2b74dbae3404bd472f384e88f7e11056.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+	width: 30px;
+	transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+	border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+main {
+	padding: 25px;
+}
+
+main .listagem-pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+main .cartao-pokemon {
+	background-color: #d8e3ec;
+	width: 230px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+	box-shadow: 10px 10px black;
+}
+
+main .cartao-pokemon:hover {
+	background-color:yellow;
+	
+}
+
+.modo-escuro {
+	background-color: rgba(130, 120, 130, 0.428);
+	color:#fdfdfd;
+}
+
+main .cartao-pokemon .informacoes {
+	
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid;
+}
+
+main .cartao-pokemon .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+	color:rgb(90, 14, 121);
+}
+
+main .cartao-pokemon .gif {
+	width: 90x;
+	height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.grama {
+	background-color: #7ac74c;
+}
+
+.veneno {
+	background-color: #df67ddfb;
+}
+
+.fogo {
+	background-color: #ee8130;
+}
+
+.agua {
+	background-color: #6390f0;
+}
+
+.inseto {
+	background-color: #a6b91a;
+}
+
+main .descricao {
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+
+@media (max-width:768px) {
+	body{
+		background-image: none;
+		background:linear-gradient(#6390f0,rgba(255, 255, 0, 0.5) )
+	}
+	header{
+
+		font-size: 0.7rem;
+		align-items: center;
+	
+	}
+	#pokebola{
+		display: none;
+
+	}
+	header .imagem-botao{
+		display: none;
+	}
+	
+	
+}
